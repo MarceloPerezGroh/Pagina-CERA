@@ -1,0 +1,149 @@
+
+body {
+    font-family: 'Nombre de la Fuente', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:'Space Grotesk', sans-serif;
+    background-image: url('fondo\ rojo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    color: #ffffff;
+}
+
+/* Encabezado */
+header {
+    background-color: #000000; 
+    color: #fff; 
+    padding: 10px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+#Tragos .grid-item h3 {
+    color: #fff; 
+}
+
+/* Sección de Tragos */
+#Tragos {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #f9f9f9; 
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    background-color: #000000; 
+    border: 1px solid #2c2c2c; 
+    transition: background-color 0.3s;
+}
+
+.grid-item h3 {
+    font-size: 1.5em;
+}
+
+.contact-section {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    header {
+        font-size: 1.5em; 
+    }
+    .grid-item {
+        padding: 10px;
+    }
+}
+
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 100%; 
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.grid-item h4, .grid-item p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #000000; 
+    color: #fff; 
+    padding: 10px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}

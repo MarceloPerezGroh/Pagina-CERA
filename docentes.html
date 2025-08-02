@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del Docente</title>
+    <link rel="stylesheet" href="docentes.css">
+</head>
+<body>
+  <header>
+        <img src="Logocera.jpg" width="100" height="100"  alt="Logo del Centro Educativo de Robótica">
+        <h1>Bienvenido/a <span id="nombreUsuario"></span></h1>
+        <a href="index.html">Volver a la página principal</a>
+    </header>
+
+    <section id="clases">
+        <h2>Clases Pendientes</h2>
+        <div class="clases-container">
+            <div class="clase-card">
+                <h3>Lunes</h3>
+                <p>Horario: 10:00 AM</p>
+                <p>Curso: Programación </p>
+                <p>Aula: 101</p>
+                <p>Observaciones: Preparar material</p>
+            </div>
+            <div class="clase-card">
+               <h3>Martes</h3>
+               <p>Horario: 11:00 AM</p>
+               <p>Curso: Robotica</p>
+               <p>Aula: 102</p>
+               <p>Observaciones: Preparar material</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <p>Copyright ©2023 Desarrollado por C.E.R.A.</p>
+    </footer>
+
+    <script>
+        
+        const params = new URLSearchParams(window.location.search);
+        const nombreUsuario = params.get('user');
+        document.getElementById('nombreUsuario').textContent = nombreUsuario || 'Docente';
+    </script>
+</body>
+</html>

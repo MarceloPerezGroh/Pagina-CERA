@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del Alumno</title>
+    <link rel="stylesheet" type="text/css" href="alumnos.css">
+    <script src="alumno.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Logocera.jpg" width="100" height="100"  alt="Logo del Centro Educativo de Robótica">
+        <h1>Bienvenido/a <span id="nombreUsuario"></span></h1>
+        <a href="index.html">Volver a la página principal</a>
+    </header>
+
+    <section id="clases">
+        <h2>Clases Semanales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Docente</th>
+                    <th>Materia</th>
+                    <th>Observaciones</th>
+                    <th>Cancelar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-01-01</td>
+                    <td>10:00 AM</td>
+                    <td>Profesor Marcos Milan</td>
+                    <td>Programación</td>
+                    <td>Observaciones sobre la clase</td>
+                    <td><button onclick="cancelarClase(1)">Cancelar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="charlas">
+        <h2>Anotarse a Charlas/Seminarios</h2>
+        <form id="charlaForm">
+            <label for="charla">Charla:</label>
+            <select id="charla" required>
+                <option value="charla1">Charla 1</option>
+                <option value="charla2">Charla 2</option>
+            </select>
+            <label for="fechaHora">Fecha y Hora:</label>
+            <input type="datetime-local" id="fechaHora" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" required></textarea>
+            <button type="button" onclick="reservarCupo()">Reservar cupo</button>
+        </form>
+    </section>
+
+    <footer>
+      <p>Copyright ©2023 Desarrollado por C.E.R.A.</p>
+      <script>
+        
+        const params = new URLSearchParams(window.location.search);
+        const nombreUsuario = params.get('user');
+        document.getElementById('nombreUsuario').textContent = nombreUsuario || 'Alumno';
+    </script>
+    </footer>
+</body>
+</html>

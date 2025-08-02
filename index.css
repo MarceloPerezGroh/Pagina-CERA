@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'tahoma';
+    background-image: url('000111.jpg');
+    background-size: cover;
+    font-size: 16px; 
+}
+
+
+header img {
+    width: 100px; 
+    height: auto; 
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+}
+
+h1 {
+    margin-left: 120px; 
+    font-family: 'tahoma';
+}
+header {
+    background-color: #022538;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-family: 'tahoma';
+}
+
+
+
+
+
+#ninos {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+h2 {
+    color: #333; 
+    font-size: 24px; 
+    font-family: 'tahoma';
+}
+
+p {
+    color: #666; 
+    font-size: 16px; 
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'tahoma';
+}
+
+
+#NuestraPropuesta img {
+    margin: 10px; 
+    box-sizing: border-box;
+}
+
+
+#informacion img {
+    margin: 10px; 
+    box-sizing: border-box; 
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+nav ul {
+    background-color: #06acff;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+.contacto img {
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+}
+
+.contact-section {
+    padding: 20px;
+    color: #312f2f;
+    font-family: tahoma;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+
+footer {
+    background-color: #022538;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-family: 'tahoma';
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Educativo Robótica en Acción</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <header>
+        <img src="Img/Logocera.jpg" width="100" height="100" alt="Logo for Centro Educativo Robótica en Acción featuring bold navy letters CE and RA in a square frame, modern and professional design, conveys a sense of innovation and teamwork">
+        <h1>Centro Educativo Robótica en Acción</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#Nuestra Propuesta">Nuestra Propuesta</a></li>
+            <li><a href="#informacion">Información</a></li>
+            <li><a href="#contacto">contacto</a></li>
+            <li><a href="#login" id="loginButton">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+    <section id="Nuestra Propuesta" >
+        <h2>Nuestra Propuesta</h2>
+        <p><strong>C.E.R.A</strong> es un espacio educativo para aprender de forma práctica y divertida PROGRAMACIÓN y ROBÓTICA, con el objetivo de acercar a niños, niñas y adolescentes a las nuevas tecnologías que en muy poco tiempo estarán presentes en la vida cotidiana.
+        Buscamos la máxima motivación para que adquieran conocimientos y habilidades para su desarrollo en un entorno activo, flexible, creativo y orientado al trabajo en equipo, aportando soluciones innovadoras a los problemas de hoy.
+        <strong>Aprender Jugando </strong>La robótica es una herramienta poderosa para el aprendizaje activo y significativo. Al trabajar con robots, los estudiantes ponen en juego sus habilidades de pensamiento crítico, resolución de problemas, programación y diseño. Además, desarrollan su creatividad, imaginación y capacidad de trabajo en equipo.</p>
+        <img src="Img/aprender.jpg" alt="Aprender Jugando">
+        
+    </section>
+    <section id="informacion">
+        <h2>NUESTRO EQUIPO DE TRABAJO</h2>
+        <p> <strong>Nuestro Centro Educativo Robótica en Acción</strong> esta compuesto por un equipo multidisciplinario formado por un grupo de profesionales de diferentes disciplinas (Ingenieros y técnicos en informática, en electrónica y electromecánica, profesores en nivel inicial, en educación especial, especialistas en otras áreas )  donde cada uno de nosotros nos dedicamos a brindar desde nuestra área de conocimientos propuestas innovadoras en educación.</p>
+        <p>Nuestro Objetivo principal es que los estudiantes sean protagonistas de sus procesos de aprendizaje, que logren autonomía en la construcción de conocimientos significativos para que puedan contar con herramientas en un mundo en constante cambio y así puedan aportar a una sociedad de progreso y con conciencia de un  futuro brillante a partir desde la Niñes o Adoslecencia.</p>
+        <h2>NUESTRAS INSTALACIONES</h2>
+        <img src="Img/nuestras aulas.jpg" alt="Aprender Jugando" width="500" height="400">
+       
+        <img src="Img/nuestras aulas 2.jpg" alt="Aprender Jugando" width="500" height="400">
+        
+        <video width="640" height="360" controls>
+            <source src="Img/robot.mp4" type="video/mp4"  width="500" height="400">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        
+    </section>
+<section>
+<div class="contact-section" id="contacto"> 
+       <h2>Contacto</h2>
+       <img src="Img/robot1.png" width="100" height="100"  alt="Logo del Centro Educativo de Robótica">
+       <div class="contact-form">
+           <form action="procesar.php" method="post"> 
+               <label for="nombre">Nombre:</label>
+               <input type="text" id="nombre" name="nombre" required>
+
+               <label for="email">Correo Electrónico:</label>
+               <input type="email" id="email" name="email" required>
+
+               <label for="mensaje">Mensaje:</label>
+               <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+               <input type="submit" value="Enviar">
+           </form>
+       </div>
+
+       <div class="contact-info"> 
+           <p>Para consultas adicionales, contáctanos en:</p>
+           <p>Teléfono: 455-7000</p>
+           <p>Correo Electrónico: roboticaenaccion@unahur.com</p>
+       </div>
+   </div>
+</article>
+</section>
+
+    <footer>
+        <p>Copyright ©2023 Desarrollado por C.E.R.A.</p>
+    </footer>
+</body>
+</html>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const loginButton = document.getElementById('loginButton');
+
+    loginButton.addEventListener('click', function () {
+        const username = prompt('Ingrese su usuario');
+        const password = prompt('Ingrese su contraseña');
+
+        
+        if (username === 'Agustina Java' && password === '123') {
+            window.location.href = `alumno.html?user=${username}`;
+        } else if (username === 'Rodrigo Lujan' && password === '123') {
+            window.location.href = `alumno.html?user=${username}`;
+        } else if (username === 'Marcos Milan' && password === '123') {
+            window.location.href = `docentes.html?user=${username}`;
+        } else if (username === 'Laura Perez' && password === '123') {
+            window.location.href = `docentes.html?user=${username}`;
+        } else {
+            alert('Usuario incorrecto');
+        }
+    });
+});
+
+</script>
+
